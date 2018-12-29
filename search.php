@@ -76,8 +76,8 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="search-box">
-        <input type="text" autocomplete="off" placeholder="Search ..." />
-        <div class="result"></div>
+        <input type="text" id= autocomplete="off" placeholder="Search ..." />
+        
     </div>
 </body>
 </html>

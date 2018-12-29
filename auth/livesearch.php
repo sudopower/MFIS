@@ -68,12 +68,15 @@ if(isset($_REQUEST["name"])){
             // Check number of rows in the result set
             if(mysqli_num_rows($result) > 0){
                 // Fetch result rows as an associative array
-                echo "<table border='1'>
-<tr>
-<th>Portfolio No.</th>
-<th>Name</th>
-<th>Scheme</th>
-</tr>";
+                echo '<table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th>Portfolio No</th>
+                        <th>Name</th>
+                        <th>Scheme</th>
+                      </tr>
+                    </thead>
+                    <tbody>';
 
 while($row = mysqli_fetch_array($result))
 {
@@ -83,7 +86,8 @@ echo "<td>" . $row['INV_NAME'] . "</td>";
 echo "<td>" . $row['SCHEME'] . "</td>";
 echo "</tr>";
 }
-echo "</table>";
+echo "</tbody>
+</table>";
             } else{
                 echo "<p>No matches found</p>";
             }
