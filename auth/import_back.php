@@ -21,7 +21,7 @@ $db_passwd = '';
 $db = 'fin_data';
 $conn = new mysqli('localhost', $db_uname, $db_passwd);
 // Path to dbase file
-$db_path = "dbffile/".$_FILES['file']['name'];
+$db_path = "../dbffile/".$_FILES['file']['name'];
 move_uploaded_file($_FILES['file']['tmp_name'], $db_path);
 
 // Open dbase file

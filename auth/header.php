@@ -19,37 +19,9 @@
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="../assets/css/main.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $.noConflict();
-    $('#search_inv').on("keyup input", function(){
-        /* Get input value on change */
-        var inputVal = $(this).val();
-        if(inputVal.length){
-            $.get("livesearch.php", {term: inputVal}).done(function(data){
-                // Display the returned data in browser
-                $('.result').html(data);
-            });
-        } else{
-          $('.result').empty();
-        }
-    });
-    
-    // Set search input value on click of result item
-    $(document).on("click", ".result p", function(){
-        var id= $('#search_inv').val($(this).text());       
-        var res=id.val();
-            $.get(
-                
-                "livesearch.php", {name: res}).done(function(data){
-                // Display the returned data in browser
-                $('#result').html(data);
-                });        
-                $('.result').empty();
-    });
-});
-</script>
+
 
     <style>
     /* Formatting search box */   
@@ -91,7 +63,7 @@ $(document).ready(function(){
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><?php $x= isset($name)? $name:'WARNING: SYSTEM ERROR'; echo $x; ?></a>
-  <input class="form-control form-control-dark w-50" type="text" placeholder="Search Investor" id='search_inv' aria-label="Search">
+  <input class="form-control form-control-dark w-50 search-top" type="text" placeholder="Search Investor" id='search_inv' aria-label="Search">
   <div class="result offset-sm-3 offset-md-4" ></div>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
@@ -105,22 +77,22 @@ $(document).ready(function(){
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <span data-feather="home"></span>
-              Dashboard <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+        <li class="nav-item">
+            <a class="nav-link" href="import.php">
               <span data-feather="file"></span>
-              Orders
+              Import
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="index.php">
+              <span data-feather="home"></span>
+              Search <span class="sr-only">(current)</span>
+            </a>
+          </li>         
+          <li class="nav-item">
+            <a class="nav-link" href="group_mgmt.php">
               <span data-feather="shopping-cart"></span>
-              Products
+              Group Management
             </a>
           </li>
           <li class="nav-item">

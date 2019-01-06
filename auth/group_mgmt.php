@@ -1,24 +1,19 @@
-<html>
-<body>
-<form id='import' action="" method='POST' enctype='multipart/formdata'>
-<label>Choose Source and Upload Data Files</label><br><br>
-<select name='source'>
-<option value='c_cams'>CM CAMS</option>
-<option value='c_frank'>CM FRANKLIN</option>
-<option value='c_karvy'>CM KARVY</option>
-<option value='t_cams'>TR CAMS</option>
-<option value='t_frank'>TR FRANKLIN</option>
-<option value='t_karvy'>TR KARVY</option>
-</select>
-<br><br>
-<input name='file' id='file' type='file'><br><br>
-<input type='submit' onclick="import_fn();">
-</form>
+<?php include('header.php');?>
+<style>
+a[href*="import"]{
+    color:#007bff !important;
+  }
+</style>
+<h1 class="h2">Group Management</h1>
+</div>
+<a class="btn btn-primary mb-2" style="color:#fff;" href="add_group.php" target="_blank">Create Group</a>
+<a class="btn btn-success mb-2" style="color:#fff;">View Group</a>
+<a class="btn btn-danger mb-2" style="color:#fff;" >Show All Groups</a>
 <script
       src="https://code.jquery.com/jquery-3.3.1.js "
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous "
-    ></script>
+    ></script>    
 <script>
 function import_fn(){  
        event.preventDefault();            
@@ -46,5 +41,4 @@ function import_fn(){
       
 }
 </script>
-</body>
-</html>
+<?php include('footer.php');?>
