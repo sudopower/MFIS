@@ -70,7 +70,7 @@ if(isset($_REQUEST["name"])){
             // Check number of rows in the result set
             if(mysqli_num_rows($result) > 0){
                 // Fetch result rows as an associative array
-                echo '<table class="table table-striped table-sm">
+                echo '<table id="example" class="table table-striped table-sm">
                     <thead>
                       <tr>
                         <th>Portfolio No</th>

@@ -36,7 +36,7 @@
     <title>Signin Template · Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
 
     <style>
