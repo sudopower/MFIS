@@ -1,5 +1,7 @@
 
-
+<?php 
+include('session.php');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -311,7 +313,7 @@ t.parentNode.insertBefore(s,t);
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
 										    <td align="left" valign="middle" class="greylink"><a onclick='window.open("../client_management/add_new.php","NEW INVESTOR","top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Add New Investor</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="/finnsys/images/blue_sq.jpg"></td>
-										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/txn/new.folios.home.asp">Import Client Master</a></td>
+										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="client_master.php">Import Client Master</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="/finnsys/images/red_sq.jpg"></td>
 										    <td align="left" class="greylink"><a href="#" onclick="return window.open('/finnsys/finplan/start.asp','SYSREPORT','top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1'); return false;" >Create a new plan</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="/finnsys/images/green_sq.jpg"></td>
