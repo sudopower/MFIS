@@ -1,4 +1,7 @@
+<?php 
+include('session.php');
 
+?>
 
 <html>                                                
 <head>
@@ -36,7 +39,7 @@
 </head>
 <body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
 <center>
-<FORM METHOD="POST" ENCTYPE="multipart/form-data" ACTION="import" id=form1 name=form1> 
+<FORM METHOD="POST" ENCTYPE="multipart/form-data" ACTION="import_preview.php" id=form1 name=form1> 
 
 <table height="30" border=0 cellpadding=0 cellspacing=0 width="100%" valign=top bgcolor="#eeeeee" >
 		<tr  >

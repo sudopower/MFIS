@@ -1,6 +1,10 @@
 
 <?php 
 include('session.php');
+$q_name='select name from user where username= "'.$_SESSION['login_user'].'"';
+$result=$db->query($q_name);
+$row=$result->fetch_array();
+$name=$row['name'];
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -183,7 +187,7 @@ t.parentNode.insertBefore(s,t);
 						  </tr>
 						  <tr>
 						    <td width="16">&nbsp;</td>
-						    <td colspan=7 width="234" height="25" align="left" ><span class="bluelink"><strong>Welcome ritud</strong></span>
+						    <td colspan=7 width="234" height="25" align="left" ><span class="bluelink"><strong>Welcome <?php if(isset($name)){echo $name;}?></strong></span>
 						    </td>
 						  </tr>
 						  <tr>
