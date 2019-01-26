@@ -6,7 +6,7 @@ if(isset($_POST['SUBMIT_FORM'])){
     "'.$_POST['Investor_Add3'].'","'.$_POST['Investor_City'].'","'.$_POST['Investor_State'].'","'.$_POST['Investor_Pin'].'","'.$_POST['Investor_Res'].'",
     "'.$_POST['Investor_Res1'].'","'.$_POST['Investor_Res2'].'","'.$_POST['Investor_Off'].'","'.$_POST['Investor_Off1'].'","'.$_POST['Investor_Off2'].'",
     "'.$_POST['Investor_MOBILE'].'","'.$_POST['Investor_Fax_Res'].'","'.$_POST['Investor_Fax_Off'].'","'.$_POST['Investor_Email'].'","'.$_POST['Investor_DOB'].'",
-	"'.$_POST['Investor_Anniv'].'","'.$_POST['Investor_Anniv'].'")';
+	"'.$_POST['Investor_Anniv'].'","'.$_POST['Investor_PAN'].'")';
 	echo $q;
 	if($db->query($q)){
         echo '<p style="background-color:green;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Successfully Added</p>';
