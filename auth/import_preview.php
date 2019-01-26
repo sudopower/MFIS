@@ -120,7 +120,7 @@ elseif($flag==2){
 		}	
 		}
 		if($stat!=0){
-			echo '<script>alert("Success");location.replace("/mapping.php")</script>';
+			echo '<script>alert("Success");location.replace("mapping.php")</script>';
 		}
 			
 		
