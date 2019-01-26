@@ -18,6 +18,33 @@ if(isset($_POST['SUBMIT_FORM'])){
 else{
 	
 }
+if(isset($_GET['invid'])){
+	$q='select * from investors where sno="'.$_GET['invid'].'"';
+	$res=$db->query($q);
+	while($row=$res->fetch_array()){
+		$username=$row['username'];
+		$name=$row['inv_name'];
+		$add1=$row['address1'];
+		$add2=$row['address2'];
+		$add3=$row['address3'];
+		$city=$row['city'];
+		$state=$row['state'];
+		$pin=$row['pincode'];
+		$pr1=$row['phone_res1'];
+		$pr2=$row['phone_res2'];
+		$pr3=$row['phone_res3'];
+		$po1=$row['phone_off1'];
+		$po2=$row['phone_off2'];
+		$po3=$row['phone_off3'];
+		$mob=$row['mobile_no'];
+		$faxr=$row['fax_res'];
+		$faxo=$row['fax_off'];
+		$email=$row['email'];
+		$dob=$row['inv_dob'];
+		$doa=$row['inv_doa'];
+		$pan=$row['pan_no'];
+	}
+}
 
 ?><script language="javascript" type="text/javascript">
     
@@ -158,7 +185,7 @@ else{
 				            <b>Login:</b> <font color=red>*</font>
 			            </td>
 			            <td class=smallest>
-				            <input type=text name="Investor_Login" value="" size="30">
+				            <input type=text name="Investor_Login" value="<?php if(isset($username)){echo $username;} ?>" size="30">
 				            <br>(min 5 characters; only a-z 0-9 _ . @ - are allowed) 
 			            </td>
 			        </tr>
@@ -167,7 +194,7 @@ else{
 				            <b>Password:</b> <font color=red>*</font>
 			            </td>
 			            <td class=smallest>
-				            <input type=password name="Investor_Pass" value="" size="20">
+				            <input type=password name="Investor_Pass" value="<?php if(isset($pass)){echo $pass;} ?>" size="20">
 					        <br>(min 6 characters, 1 number required) 
 				            
 			            </td>
@@ -177,7 +204,7 @@ else{
 				            <b>Retype:</b> <font color=red>*</font>
 			            </td>
 			            <td>
-				            <input type=password name="Investor_RePass" value="" size="20">
+				            <input type=password name="Investor_RePass" value="<?php if(isset($pass)){echo $pass;} ?>" size="20">
 			            </td>
 			        </tr>
 			        <tr>
@@ -197,75 +224,75 @@ else{
 			<table border=0 cellpadding=6 cellspacing=1 width="90%" valign=top align=center>	
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Name:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_Name" value="" size=50 maxlength=50>
+				<td><input type=text name="Investor_Name" value="<?php if(isset($name)){echo $name;} ?>" size=50 maxlength=50>
 				</td>
 			</tr>	
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Address:</b> <font color=red>*</font></td>
-				<td ><input type=text name="Investor_Add1" value="" size=50 maxlength=50>
-				<br><input type=text name="Investor_Add2" value="" size=50 maxlength=50>
-				<br><input type=text name="Investor_Add3" value="" size=50 maxlength=50>
+				<td ><input type=text name="Investor_Add1" value="<?php if(isset($add1)){echo $add1;} ?>" size=50 maxlength=50>
+				<br><input type=text name="Investor_Add2" value="<?php if(isset($add2)){echo $add2;} ?>" size=50 maxlength=50>
+				<br><input type=text name="Investor_Add3" value="<?php if(isset($add3)){echo $add3;} ?>" size=50 maxlength=50>
 				</td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>City:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_City" value="" size=40 maxlength=50></td>
+				<td><input type=text name="Investor_City" value="<?php if(isset($city)){echo $city;} ?>" size=40 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>State:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_State" value="" size=40 maxlength=50></td>
+				<td><input type=text name="Investor_State" value="<?php if(isset($state)){echo $state;} ?>" size=40 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Pin:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_Pin" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_Pin" value="<?php if(isset($pin)){echo $pin;} ?>" size=30 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Phone (Res):</b></td>
-				<td><input type=text name="Investor_Res" value="" size=30 maxlength=50>
-				<br><input type=text name="Investor_Res1" value="" size=30 maxlength=50>
-				<br><input type=text name="Investor_Res2" value="" size=30 maxlength=50>
+				<td><input type=text name="Investor_Res" value="<?php if(isset($pr1)){echo $pr1;} ?>" size=30 maxlength=50>
+				<br><input type=text name="Investor_Res1" value="<?php if(isset($pr2)){echo $pr2;} ?>" size=30 maxlength=50>
+				<br><input type=text name="Investor_Res2" value="<?php if(isset($pr3)){echo $pr3;} ?>" size=30 maxlength=50>
 				</td>
 			</tr>
 
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Phone (Off):</b></td>
-				<td><input type=text name="Investor_Off" value="" size=30 maxlength=50>
-				<br><input type=text name="Investor_Off1" value="" size=30 maxlength=50>
-				<br><input type=text name="Investor_Off2" value="" size=30 maxlength=50>
+				<td><input type=text name="Investor_Off" value="<?php if(isset($po1)){echo $po1;} ?>" size=30 maxlength=50>
+				<br><input type=text name="Investor_Off1" value="<?php if(isset($po2)){echo $po2;} ?>" size=30 maxlength=50>
+				<br><input type=text name="Investor_Off2" value="<?php if(isset($po3)){echo $po3;} ?>" size=30 maxlength=50>
 				</td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Mobile:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_MOBILE" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_MOBILE" value="<?php if(isset($mob)){echo $mob;} ?>" size=30 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Fax (Res):</b> </td>
-				<td><input type=text name="Investor_Fax_Res" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_Fax_Res" value="<?php if(isset($faxr)){echo $faxr;} ?>" size=30 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Fax (Off):</b></td>
-				<td><input type=text name="Investor_Fax_Off" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_Fax_Off" value="<?php if(isset($faxo)){echo $faxo;} ?>" size=30 maxlength=50></td>
 			</tr>
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Email:</b> <font color=red>*</font></td>
-				<td><input type=text name="Investor_Email" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_Email" value="<?php if(isset($email)){echo $email;} ?>" size=30 maxlength=50></td>
 			</tr>
 
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>DOB:</b> <font color=red>*</font></td>
-				<td class=smallest><input type=text name="Investor_DOB" value="" size=30 maxlength=50>
+				<td class=smallest><input type=text name="Investor_DOB" value="<?php if(isset($dob)){echo $dob;} ?>" size=30 maxlength=50>
 				(e.g. 30-12-1975)</td>
 			</tr>
 			
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Marriage Anniversary:</b></td>
-				<td class=smallest><input type=text name="Investor_Anniv" value="" size=30 maxlength=50>
+				<td class=smallest><input type=text name="Investor_Anniv" value="<?php if(isset($doa)){echo $dob;} ?>" size=30 maxlength=50>
 				(e.g. 30-12-1995)</td>
 			</tr>
 			
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>PAN:</b></td>
-				<td><input type=text name="Investor_PAN" value="" size=30 maxlength=50></td>
+				<td><input type=text name="Investor_PAN" value="<?php if(isset($pan)){echo $pan;} ?>" size=30 maxlength=50></td>
 			</tr>
 			<tr>
 				<td colspan=2 class=normal ALIGN=CENTER>
