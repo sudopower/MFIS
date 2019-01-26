@@ -5,6 +5,7 @@ $q_name='select name from user where username= "'.$_SESSION['login_user'].'"';
 $result=$db->query($q_name);
 $row=$result->fetch_array();
 $name=$row['name'];
+$_SESSION['name']=$name;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
