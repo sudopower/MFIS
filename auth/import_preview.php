@@ -46,7 +46,6 @@ $column_info = dbase_get_header_info($dbh);
 function import_dbf($db, $table, $dbf_file,$flag)
 {
 global $conn,$f_col,$i_col,$a_col,$j_col,$b_col;
-$str='';
 if (!$dbf = dbase_open ($dbf_file, 0)){ die("Could not open $dbf_file for import."); }
 $num_rec = dbase_numrecords($dbf);
 $num_fields = dbase_numfields($dbf);
@@ -55,12 +54,12 @@ $fields = array();
 for ($i=1; $i<=$num_rec; $i++){
 $row = @dbase_get_record_with_names($dbf,$i);
 foreach ($row as $key => $val){
-if ($key == 'deleted'){ continue; }
-if ($key == $f_col){ $str.= "<tr  bgcolor='#eeeeee'><td class=smallest align=center>" . addslashes(trim($row[$key])) . "</td>"; }
-if ($key == $i_col){ $str.= "<td class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
-if ($key == $j_col){ $str.= "<td class=smallest class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
-if ($key == $a_col){ $str.= "<td class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
-if ($key == $b_col){ $str.= "<td class=smallest>" . addslashes(trim($row[$key])) . "</td></tr>"; }
+if ($key == ''){ continue; }
+if ($key == $f_col){ $str['f'][]= "<tr  bgcolor='#eeeeee'><td class=smallest align=center>" . addslashes(trim($row[$key])) . "</td>"; }
+if ($key == $i_col){ $str['i'][]= "<td class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
+if ($key == $j_col){ $str['j'][]= "<td class=smallest class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
+if ($key == $a_col){ $str['a'][]= "<td class=smallest>" . addslashes(trim($row[$key])) . "</td>"; }
+if ($key == $b_col){ $str['b'][] = "<td class=smallest>" . addslashes(trim($row[$key])) . "</td></tr>"; }
 }
 if (isset($extra_col_val)){ echo "<td>'$extra_col_val'</td>"; }
 }
@@ -135,7 +134,7 @@ else{
 						<tr><td valign="top" align="left" class=normal>
 							<b><font color="#f06601"><u>Registrar</u>: <?php if(isset($tbl)){echo $tbl;}?></font></b>
 							</td>
-							<td valign="top" align="right" class=normal><font color="#f06601"><b>[ Total Records - <?php echo import_dbf($db, $tbl, $db_path,0);?> ]</b></font>&nbsp;&nbsp;</td>
+							<td valign="top" align="right" class=normal><font color="#f06601"><b>[ Total Records - <?php $recs= import_dbf($db, $tbl, $db_path,0);echo $recs;?> ]</b></font>&nbsp;&nbsp;</td>
 						</tr>
 						<tr><td>&nbsp;</td></tr>
 						<tr>
@@ -190,7 +189,19 @@ else{
 								<font color="#ffffff"><b>Bank</b></font>
 							</td>
 						</tr>
-								<?php echo import_dbf($db, $tbl, $db_path,1);?>
+								<?php $res_str= import_dbf($db, $tbl, $db_path,1);
+								if((isset($res_str['j'][0]))){
+									
+								}
+								else{
+									echo '<script>alert("Please Upload Correct Files and Choose Registrar");window.history.back();</script>';
+								}
+								for($i=0;$i<$recs;$i++)
+								{	
+									echo $res_str['f'][$i].$res_str['i'][$i].$res_str['a'][$i].$res_str['j'][$i].$res_str['b'][$i];
+								}
+									
+								?>
 							<tr><td colspan=9><hr size=1 width="100%" ></td></tr>
 							</table>
 							
