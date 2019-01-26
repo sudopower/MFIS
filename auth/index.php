@@ -336,7 +336,7 @@ t.parentNode.insertBefore(s,t);
 										</tr>
 										<tr>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/reports/home.txn_summ.asp">Investor MIS</a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="search_inv.php">Investor MIS</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="/finnsys/images/blue_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/txn/trail.home.asp">Import Trail Reports </a></td>
 										    <td valign="middle" align="right" width="15px"><img src="/finnsys/images/red_sq.jpg"></td>
