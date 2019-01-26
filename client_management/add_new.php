@@ -1,12 +1,13 @@
 <?php 
 include_once('../auth/session.php');
 if(isset($_POST['SUBMIT_FORM'])){
-    $q='insert into investor (username,password,name,address1,address2,address3,city,state,pincode,phone_res1,phone_res2,phone_res3,phone_off1,phone_off2,phone_off3,mobile,fax_res,fax_off,email,dob,doa,pan)
+    $q='insert into investors (username,password,inv_name,address1,address2,address3,city,state,pincode,phone_res1,phone_res2,phone_res3,phone_off1,phone_off2,phone_off3,mobile_no,fax_res,fax_off,email,inv_dob,inv_doa,pan_no)
     values ("'.$_POST['Investor_Login'].'","'.$_POST['Investor_Pass'].'","'.$_POST['Investor_Name'].'","'.$_POST['Investor_Add1'].'","'.$_POST['Investor_Add2'].'",
     "'.$_POST['Investor_Add3'].'","'.$_POST['Investor_City'].'","'.$_POST['Investor_State'].'","'.$_POST['Investor_Pin'].'","'.$_POST['Investor_Res'].'",
     "'.$_POST['Investor_Res1'].'","'.$_POST['Investor_Res2'].'","'.$_POST['Investor_Off'].'","'.$_POST['Investor_Off1'].'","'.$_POST['Investor_Off2'].'",
     "'.$_POST['Investor_MOBILE'].'","'.$_POST['Investor_Fax_Res'].'","'.$_POST['Investor_Fax_Off'].'","'.$_POST['Investor_Email'].'","'.$_POST['Investor_DOB'].'",
-    "'.$_POST['Investor_Anniv'].'","'.$_POST['Investor_Anniv'].'")';
+	"'.$_POST['Investor_Anniv'].'","'.$_POST['Investor_Anniv'].'")';
+	echo $q;
 	if($db->query($q)){
         echo '<p style="background-color:green;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Successfully Added</p>';
 	}
