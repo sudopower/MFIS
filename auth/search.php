@@ -370,7 +370,7 @@ function getFolioDetails(DivToChange, inv_id) {
             }
             echo '<tr bgcolor="'.$color.'">
                 <td class=smallest align=CENTER rowspan="2" nowrap>
-                    30-Nov-2016
+                    '.date("d-M-Y",strtotime($r['folio_date'])).'
                 </td>                                    
 		        <td class=smallest align=LEFT>
 		            
@@ -421,7 +421,7 @@ function getFolioDetails(DivToChange, inv_id) {
 	        </tr>
 	        <tr bgcolor="#eeeeee">
                 <TD colspan=11 class=smallest style="border: 0px solid;" align="center">
-                    <span class=smallest style="float:left;"><a onclick="if (document.getElementById("DIV_MENUS_923").style.display=="block"){document.getElementById("DIV_MENUS_923").style.display="none";document.getElementById("IMG_MENUS_923").src="/FinnSys/images/common/button_Open.gif";} else {document.getElementById("DIV_MENUS_923").style.display="block";document.getElementById("IMG_MENUS_923").src="/FinnSys/images/common/button_Close.gif";} return false;" href="#" style="text-decoration:none;" ><img src="/FinnSys/images/common/button_Open.gif" border=0 id="IMG_MENUS_923">&nbsp;Reports & Utilities</a></span>
+                    <span class=smallest style="float:left;"><a onclick="if (document.getElementById("DIV_MENUS_923").style.display=="block"){document.getElementById("DIV_MENUS_923").style.display="none";document.getElementById("IMG_MENUS_923").src="FinnSys/images/button_Open.gif";} else {document.getElementById("DIV_MENUS_923").style.display="block";document.getElementById("IMG_MENUS_923").src="FinnSys/images/button_Close.gif";} return false;" href="#" style="text-decoration:none;" ><img src="FinnSys/images/button_Open.gif" border=0 id="IMG_MENUS_923">&nbsp;Reports & Utilities</a></span>
 
                     <DIV id="DIV_MENUS_923" style="display:none;">
 
