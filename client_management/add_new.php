@@ -1,4 +1,5 @@
 <?php 
+
 include_once('../auth/session.php');
 if(isset($_POST['SUBMIT_FORM'])){
     $q='insert into investors (username,password,inv_name,address1,address2,address3,city,state,pincode,phone_res1,phone_res2,phone_res3,phone_off1,phone_off2,phone_off3,mobile_no,fax_res,fax_off,email,inv_dob,inv_doa,pan_no)
@@ -44,6 +45,10 @@ if(isset($_GET['invid'])){
 		$doa=$row['inv_doa'];
 		$pan=$row['pan_no'];
 	}
+}
+if(isset($_POST['UPDATE_FORM'])){
+$q='UPDATE investors set '.if(isset($_POST['Investor_Login'])){echo "username='".$_POST['Investor_Login'].",password='".$_POST['Investor_RePass'].",";}.'
+	';
 }
 
 ?><script language="javascript" type="text/javascript">
@@ -194,7 +199,9 @@ if(isset($_GET['invid'])){
 				            <b>Password:</b> <font color=red>*</font>
 			            </td>
 			            <td class=smallest>
-				            <input type=password name="Investor_Pass" value="<?php if(isset($pass)){echo $pass;} ?>" size="20">
+				            <?php if(isset($pass)){echo '<input type=text name="Investor_Pass" value="'.$pass.'" size="20">';} else{
+								echo '<input type=password name="Investor_Pass" value=""  size="20">';
+							} ?>
 					        <br>(min 6 characters, 1 number required) 
 				            
 			            </td>
@@ -296,7 +303,7 @@ if(isset($_GET['invid'])){
 			</tr>
 			<tr>
 				<td colspan=2 class=normal ALIGN=CENTER>
-					<INPUT type="submit" value="Create New Investor" name="SUBMIT_FORM" class=normal onClick="" STYLE="font-family:Arial; font-size:xx-medium;font-weight:bold;color:#000000; width:200">
+					<INPUT type="submit" value="<?php if(isset($_GET['invid'])){echo 'Update';}else{echo 'Create New Investor';} ?>" name="<?php if(isset($_GET['invid'])){echo 'UPDATE_FORM';}else{echo 'SUBMIT_FORM';} ?>" class=normal onClick="" STYLE="font-family:Arial; font-size:xx-medium;font-weight:bold;color:#000000; width:200">
 					<input type="hidden" name="invid" value="0" >
 					<input type=hidden name="SYS_ALLOW_WEB_ACCESS_FROM_DB" value="0">
 				</td>
