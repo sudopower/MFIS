@@ -6,9 +6,9 @@ if(isset($_POST['SUBMIT_FORM'])){
     values ("'.$_POST['Investor_Login'].'","'.$_POST['Investor_Pass'].'","'.$_POST['Investor_Name'].'","'.$_POST['Investor_Add1'].'","'.$_POST['Investor_Add2'].'",
     "'.$_POST['Investor_Add3'].'","'.$_POST['Investor_City'].'","'.$_POST['Investor_State'].'","'.$_POST['Investor_Pin'].'","'.$_POST['Investor_Res'].'",
     "'.$_POST['Investor_Res1'].'","'.$_POST['Investor_Res2'].'","'.$_POST['Investor_Off'].'","'.$_POST['Investor_Off1'].'","'.$_POST['Investor_Off2'].'",
-    "'.$_POST['Investor_MOBILE'].'","'.$_POST['Investor_Fax_Res'].'","'.$_POST['Investor_Fax_Off'].'","'.$_POST['Investor_Email'].'","'.$_POST['Investor_DOB'].'",
-	"'.$_POST['Investor_Anniv'].'","'.$_POST['Investor_PAN'].'")';
-	echo $q;
+    "'.$_POST['Investor_MOBILE'].'","'.$_POST['Investor_Fax_Res'].'","'.$_POST['Investor_Fax_Off'].'","'.$_POST['Investor_Email'].'","'.date("Y-m-d",strtotime($_POST['Investor_DOB'])).'",
+	"'.date("Y-m-d",strtotime($_POST['Investor_Anniv'])).'","'.$_POST['Investor_PAN'].'")';
+	
 	if($db->query($q)){
         echo '<p style="background-color:green;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Successfully Added</p>';
 	}
@@ -24,6 +24,7 @@ if(isset($_GET['invid'])){
 	$res=$db->query($q);
 	while($row=$res->fetch_array()){
 		$username=$row['username'];
+		$pass=$row['password'];
 		$name=$row['inv_name'];
 		$add1=$row['address1'];
 		$add2=$row['address2'];
@@ -47,8 +48,22 @@ if(isset($_GET['invid'])){
 	}
 }
 if(isset($_POST['UPDATE_FORM'])){
-$q='UPDATE investors set '.if(isset($_POST['Investor_Login'])){echo "username='".$_POST['Investor_Login'].",password='".$_POST['Investor_RePass'].",";}.'
-	';
+	echo $_POST['Investor_DOB'];
+$q='UPDATE investors set ';
+if(isset($_POST['Investor_Login'])){$q.='username="'.$_POST['Investor_Login'].'",password="'.$_POST['Investor_RePass'].'",';}
+$q.= 'inv_name="'.$_POST['Investor_Name'].'",address1="'.$_POST['Investor_Add1'].'",address2="'.$_POST['Investor_Add2'].'",
+address3="'.$_POST['Investor_Add3'].'",city="'.$_POST['Investor_City'].'",state="'.$_POST['Investor_State'].'",
+pincode="'.$_POST['Investor_Pin'].'",phone_res1="'.$_POST['Investor_Res'].'",phone_res2="'.$_POST['Investor_Res1'].'",
+phone_res3="'.$_POST['Investor_Res2'].'",phone_off1="'.$_POST['Investor_Off'].'",phone_off2="'.$_POST['Investor_Off1'].'",
+phone_off3="'.$_POST['Investor_Off2'].'",mobile_no="'.$_POST['Investor_MOBILE'].'",fax_res="'.$_POST['Investor_Fax_Res'].'",
+fax_off="'.$_POST['Investor_Fax_Off'].'",email="'.$_POST['Investor_Email'].'",inv_dob="'.date("Y-m-d",strtotime($_POST['Investor_DOB'])).'"
+,inv_doa="'.date("Y-m-d",strtotime($_POST['Investor_Anniv'])).'",pan_no="'.$_POST['Investor_PAN'].'" where sno="'.$_POST['invid'].'"';
+if($db->query($q)){
+	echo '<p style="background-color:green;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Successfully Updated</p>';
+}
+else{
+	echo '<p style="background-color:red;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Error in the System</p>';
+}
 }
 
 ?><script language="javascript" type="text/javascript">
@@ -199,8 +214,8 @@ $q='UPDATE investors set '.if(isset($_POST['Investor_Login'])){echo "username='"
 				            <b>Password:</b> <font color=red>*</font>
 			            </td>
 			            <td class=smallest>
-				            <?php if(isset($pass)){echo '<input type=text name="Investor_Pass" value="'.$pass.'" size="20">';} else{
-								echo '<input type=password name="Investor_Pass" value=""  size="20">';
+				            <?php if(isset($pass)){echo '<input type="password" name="Investor_Pass" value="'.$pass.'" size="20">';} else{
+								echo '<input type="password" name="Investor_Pass" value=""  size="20">';
 							} ?>
 					        <br>(min 6 characters, 1 number required) 
 				            
@@ -293,7 +308,7 @@ $q='UPDATE investors set '.if(isset($_POST['Investor_Login'])){echo "username='"
 			
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Marriage Anniversary:</b></td>
-				<td class=smallest><input type=text name="Investor_Anniv" value="<?php if(isset($doa)){echo $dob;} ?>" size=30 maxlength=50>
+				<td class=smallest><input type=text name="Investor_Anniv" value="<?php if(isset($doa)){echo $doa;} ?>" size=30 maxlength=50>
 				(e.g. 30-12-1995)</td>
 			</tr>
 			
@@ -304,7 +319,7 @@ $q='UPDATE investors set '.if(isset($_POST['Investor_Login'])){echo "username='"
 			<tr>
 				<td colspan=2 class=normal ALIGN=CENTER>
 					<INPUT type="submit" value="<?php if(isset($_GET['invid'])){echo 'Update';}else{echo 'Create New Investor';} ?>" name="<?php if(isset($_GET['invid'])){echo 'UPDATE_FORM';}else{echo 'SUBMIT_FORM';} ?>" class=normal onClick="" STYLE="font-family:Arial; font-size:xx-medium;font-weight:bold;color:#000000; width:200">
-					<input type="hidden" name="invid" value="0" >
+					<input type="hidden" name="invid" value="<?php if(isset($_GET['invid'])){echo $_GET['invid'];}?>" >
 					<input type=hidden name="SYS_ALLOW_WEB_ACCESS_FROM_DB" value="0">
 				</td>
 			</tr>
