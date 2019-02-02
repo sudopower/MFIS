@@ -2,12 +2,12 @@
 
 include_once('../auth/session.php');
 if(isset($_POST['SUBMIT_FORM'])){
-    $q='insert into investors (username,password,inv_name,address1,address2,address3,city,state,pincode,phone_res1,phone_res2,phone_res3,phone_off1,phone_off2,phone_off3,mobile_no,fax_res,fax_off,email,inv_dob,inv_doa,pan_no)
+    $q='insert into investors (username,password,inv_name,address1,address2,address3,city,state,pincode,phone_res1,phone_res2,phone_res3,phone_off1,phone_off2,phone_off3,mobile_no,fax_res,fax_off,email,inv_dob,inv_doa,pan_no,folio_date)
     values ("'.$_POST['Investor_Login'].'","'.$_POST['Investor_Pass'].'","'.$_POST['Investor_Name'].'","'.$_POST['Investor_Add1'].'","'.$_POST['Investor_Add2'].'",
     "'.$_POST['Investor_Add3'].'","'.$_POST['Investor_City'].'","'.$_POST['Investor_State'].'","'.$_POST['Investor_Pin'].'","'.$_POST['Investor_Res'].'",
     "'.$_POST['Investor_Res1'].'","'.$_POST['Investor_Res2'].'","'.$_POST['Investor_Off'].'","'.$_POST['Investor_Off1'].'","'.$_POST['Investor_Off2'].'",
     "'.$_POST['Investor_MOBILE'].'","'.$_POST['Investor_Fax_Res'].'","'.$_POST['Investor_Fax_Off'].'","'.$_POST['Investor_Email'].'","'.date("Y-m-d",strtotime($_POST['Investor_DOB'])).'",
-	"'.date("Y-m-d",strtotime($_POST['Investor_Anniv'])).'","'.$_POST['Investor_PAN'].'")';
+	"'.date("Y-m-d",strtotime($_POST['Investor_Anniv'])).'","'.$_POST['Investor_PAN'].'","'.date('Y-m-d').'")';
 	
 	if($db->query($q)){
         echo '<p style="background-color:green;color:white;margin-top:0px;margin-left:50%;width:fit-content;padding:10 10 10 10;">Successfully Added</p>';
@@ -214,7 +214,7 @@ else{
 				            <b>Password:</b> <font color=red>*</font>
 			            </td>
 			            <td class=smallest>
-				            <?php if(isset($pass)){echo '<input type="password" name="Investor_Pass" value="'.$pass.'" size="20">';} else{
+				            <?php if(isset($pass)){echo '<input type="text" name="Investor_Pass" value="'.$pass.'" size="20">';} else{
 								echo '<input type="password" name="Investor_Pass" value=""  size="20">';
 							} ?>
 					        <br>(min 6 characters, 1 number required) 
@@ -302,13 +302,13 @@ else{
 
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>DOB:</b> <font color=red>*</font></td>
-				<td class=smallest><input type=text name="Investor_DOB" value="<?php if(isset($dob)){echo $dob;} ?>" size=30 maxlength=50>
+				<td class=smallest><input type=text name="Investor_DOB" value="<?php if(isset($dob)){echo date('d-m-Y',strtotime($dob));} ?>" size=30 maxlength=50>
 				(e.g. 30-12-1975)</td>
 			</tr>
 			
 			<tr>
 				<td width="30%" class=smallest bgcolor="#91bfd9"><b>Marriage Anniversary:</b></td>
-				<td class=smallest><input type=text name="Investor_Anniv" value="<?php if(isset($doa)){echo $doa;} ?>" size=30 maxlength=50>
+				<td class=smallest><input type=text name="Investor_Anniv" value="<?php if(isset($doa)){echo date('d-m-Y',strtotime($doa));;} ?>" size=30 maxlength=50>
 				(e.g. 30-12-1995)</td>
 			</tr>
 			
