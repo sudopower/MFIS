@@ -1,6 +1,15 @@
 <?php 
 include('session.php');
-$q='select * from investors where inv_name like "%'.$_GET["srch_str"].'%"';
+$sort='inv_name ASC';
+if(isset($_GET['sortby'])){
+    switch($_GET['sortby']){
+        case 'ADDDATE': $sort='folio_date DESC';
+        break;
+        
+    }
+}
+
+$q='select * from investors where inv_name like "%'.$_GET["srch_str"].'%" order by '.$sort.'';
 $result=$db->query($q);
 $num=$result->num_rows;
 ?>
@@ -51,7 +60,7 @@ $num=$result->num_rows;
 </style>
 
 
-<link REL="stylesheet" HREF="http://katariaweb.com/FinnSys/includes/standard.css" TYPE="text/css">
+<link REL="stylesheet" HREF="FinnSys/includes/standard.css" TYPE="text/css">
 
 
 <script language="javascript">
@@ -76,7 +85,7 @@ if (DivToChange.style.display == "none")
     document.getElementById("TAB_FOLIO_" + inv_id).style.backgroundColor = "#ffffff";
     document.getElementById("TAB_FOLIO_LNK_" + inv_id).style.color = "#3787af";
     document.getElementById("TAB_FOLIO_LNK_" + inv_id).style.fontWeight = "bold";
-	//ImgToChange.src="/FinnSys/images/common/button_Close.gif";
+	//ImgToChange.src="FinnSys/images/common/button_Close.gif";
 	return false;
 	}
 else
@@ -86,13 +95,13 @@ else
     document.getElementById("TAB_FOLIO_" + inv_id).style.backgroundColor = "#3787af";
     document.getElementById("TAB_FOLIO_LNK_" + inv_id).style.color = "#ffffff";
     document.getElementById("TAB_FOLIO_LNK_" + inv_id).style.fontWeight = "normal";
-	//ImgToChange.src="/FinnSys/images/common/button_Open.gif";
+	//ImgToChange.src="FinnSys/images/common/button_Open.gif";
 	return false;
 	}	
 }
 
 function getFolioDetails(DivToChange, inv_id) {
-    var url = '/finnsys/investors/getfolio.svc.asp?invid=' + inv_id + '&TO_REPORT=TXN_SUMM';
+    var url = 'finnsys/investors/getfolio.php?invid=' + inv_id + '&TO_REPORT=TXN_SUMM';
     $.ajax({
         method: "GET",
         url: url,
@@ -107,7 +116,7 @@ function getFolioDetails(DivToChange, inv_id) {
 </script>
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
-<script type='text/javascript' src='/finnsys/reports/common/fxdhdr.js'></script>
+<script type='text/javascript' src='finnsys/reports/common/fxdhdr.js'></script>
 
 <style type="text/css">
 #mask {
@@ -228,8 +237,8 @@ function getFolioDetails(DivToChange, inv_id) {
 	</td>
 	<td class=smallest align=right valign=top>
 	    <b>Search:</b>&nbsp;&nbsp;
-	    <input type="text" size="30" name="srch_str" width="90%" value="">&nbsp;
-	    <input name="imageField" type="image" src="/FinnSys/images/srch.gif" border="0">
+	    <input type="text" size="30" name="srch_str" width="90%" value="<?php if(isset($_GET['srch_str'])){echo $_GET['srch_str'];}?>">&nbsp;
+	    <input name="imageField" type="image" src="FinnSys/images/srch.gif" border="0">
 	    <input name="SHOWFOLIO" type="HIDDEN" VALUE="1" >
 	    <input name="TO_REPORT" type="HIDDEN" VALUE="TXN_SUMM" >
 	</td>
@@ -243,13 +252,13 @@ function getFolioDetails(DivToChange, inv_id) {
 
         <td class=smallest width="5%" align=center rowspan="2" nowrap>
 			
-			<A HREF="search.asp?grp_only=&CHARONLY=&TO_REPORT=TXN_SUMM&SHOWFOLIO=1&srch_str=arpit&sortby=ADDDATE"><b><font color="#ffffff">Date Added</b></font></A>
+			<A HREF="search.php?grp_only=&CHARONLY=&TO_REPORT=TXN_SUMM&SHOWFOLIO=1&srch_str=<?php if(isset($_GET['srch_str'])){echo $_GET['srch_str'];}?>&sortby=ADDDATE"><b><font color="#ffffff">Date Added</b></font></A>
 		
 		</td>	
 		
 		<td class=smallest width="10%" align=center>
 		
-			<b><font color="#ffffff">Name</b></font>&nbsp;<img src="/FinnSys/images/blue-asc.jpg" border=0>
+			<b><font color="#ffffff">Name</b></font>&nbsp;<img src="FinnSys/images/blue-asc.jpg" border=0>
 		
 		</td>	
 		
@@ -382,19 +391,19 @@ function getFolioDetails(DivToChange, inv_id) {
 			            -
 		            
 		        </td>
-		        <td class=smallest align=LEFT> A 21/1 ARPITA ENCLAVE NANAKHEDA</td>
-		        <td class=smallest align=center>UJJAIN</td>
-                <td class=smallest align=center>456001</td>
-                <td class=smallest align=center>14-Apr-1973</td>
+		        <td class=smallest align=LEFT>'.$r['address1'].'</td>
+		        <td class=smallest align=center>'.$r['city'].'</td>
+                <td class=smallest align=center>'.$r['pincode'].'</td>
+                <td class=smallest align=center>'.date("M-d-Y",strtotime($r['inv_dob'])).'</td>
                 <td class=smallest align=center rowspan="2" valign="middle" nowrap>
-                    anilk109047<br><br><br>
-				        [ <A onclick="window.open("/FinnSys/tools/mailer.investor.asp?todo=1&tid=923","","top=50,left=200,height=500,width=600,header=no,resizable=yes,scrollbars=1"); return false;" href="#">Email Password</A> ]
+                    '.$r['username'].'<br><br><br>
+				        [ <A href="tools/mailer_investor.php?todo=1&tid='.$r['sno'].'">Email Password</A> ]
 			        
                 </td>
                 <td class=smallest align=center rowspan="2" valign="middle" nowrap>
                     
                         <img src="finnsys/images/trans_cross.png"><br /><br />
-                        [ <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.asp?INVESTOR_ID=923","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">create</a> ]
+                        [ <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.asp?INVESTOR_ID='.$r['sno'].'","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">create</a> ]
                     
                 </td>
                 <td class=smallest align=center rowspan="2" valign="middle" nowrap>
@@ -406,129 +415,129 @@ function getFolioDetails(DivToChange, inv_id) {
                     
                         <img src="finnsys/images/trans_cross.png"><br /><br />
                         
-                                [ <A onclick="window.open("/FinnSys/tools/mailer.investor.asp?todo=2&tid=923","","top=50,left=200,height=500,width=600,header=no,resizable=yes,scrollbars=1"); return false;" href="#">Invite to use App</A> ]
+                                [ <A onclick="window.open("FinnSys/tools/mailer.investor.asp?todo=2&tid='.$r['sno'].'","","top=50,left=200,height=500,width=600,header=no,resizable=yes,scrollbars=1"); return false;" href="#">Invite to use App</A> ]
 				            
                 </td>
 	        </tr>
 	        <tr bgcolor="#eeeeee">
-                <td class=smallest align=center>ABEPC1623L</td>
-                <td class=smallest align=center>9424560696</td>
+                <td class=smallest align=center>'.$r['pan_no'].'</td>
+                <td class=smallest align=center>'.$r['mobile_no'].'</td>
                 
-                <td class=smallest align=center>-</td>
-                <td class=smallest align=center>-</td>
-                <td class=smallest align=center>ANILCHAUBE21@GMAIL.COM</td>
-                <td class=smallest align=center>-</td>
+                <td class=smallest align=center>'.$r['phone_res1'].'</td>
+                <td class=smallest align=center>'.$r['phone_off1'].'</td>
+                <td class=smallest align=center>'.$r['email'].'</td>
+                <td class=smallest align=center>'.$r['fh_ckyc_no'].'</td>
 	        </tr>
 	        <tr bgcolor="#eeeeee">
                 <TD colspan=11 class=smallest style="border: 0px solid;" align="center">
-                    <span class=smallest style="float:left;"><a onclick="if (document.getElementById("DIV_MENUS_923").style.display=="block"){document.getElementById("DIV_MENUS_923").style.display="none";document.getElementById("IMG_MENUS_923").src="FinnSys/images/button_Open.gif";} else {document.getElementById("DIV_MENUS_923").style.display="block";document.getElementById("IMG_MENUS_923").src="FinnSys/images/button_Close.gif";} return false;" href="#" style="text-decoration:none;" ><img src="FinnSys/images/button_Open.gif" border=0 id="IMG_MENUS_923">&nbsp;Reports & Utilities</a></span>
+                    <span class=smallest style="float:left;"><a onclick="open_div_fns(\''.$r['sno'].'\');" href="#" style="text-decoration:none;" ><img src="FinnSys/images/button_Open.gif" border=0 id="IMG_MENUS_'.$r['sno'].'">&nbsp;Reports & Utilities</a></span>
 
-                    <DIV id="DIV_MENUS_923" style="display:none;">
+                    <DIV id="DIV_MENUS_'.$r['sno'].'" style="display:none;">
 
                         <table border="0" cellpadding="10" cellspacing="5" align="center">
                         <tr>
                 
-			                <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;width:150px;text-align:center; background-color:#3787af;" id="TAB_FOLIO_923">			
-			                    <a id="TAB_FOLIO_LNK_923" href="#" class=smallest onClick="OpenFolio("923"); return false;" style="color:#ffffff;">Folio List</a>
+			                <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;width:150px;text-align:center; background-color:#3787af;" id="TAB_FOLIO_'.$r['sno'].'">			
+			                    <a id="TAB_FOLIO_LNK_'.$r['sno'].'" href="#" class=smallest onClick="OpenFolio(\''.$r['sno'].'\'); return false;" style="color:#ffffff;">Folio List</a>
 			                </TD>
                                 <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;color:#ffffff; width:150px;text-align:center;" bgcolor="#3787af">			
-			                        <a href="#" onclick="if (document.getElementById("UD_DIV_PORTF_923").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_PORTF_923").style.display="block";} return false;" style="color:#ffffff;">Portfolio Reports</a>
-				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_PORTF_923" name="UD_DIV_PORTF_923">
+			                        <a href="#" onclick="if (document.getElementById("UD_DIV_PORTF_'.$r['sno'].'").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_PORTF_'.$r['sno'].'").style.display="block";} return false;" style="color:#ffffff;">Portfolio Reports</a>
+				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_PORTF_'.$r['sno'].'" name="UD_DIV_PORTF_'.$r['sno'].'">
                                         <table width="100px" cellpadding="6" cellspacing="0" style="border:1px solid #d2d2d3;">
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/agents/aum.summary.asp?agent_id=1&INVESTOR_ID=923&det=n","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">AUM Report</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/agents/aum.summary.asp?agent_id=1&INVESTOR_ID='.$r['sno'].'&det=n","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">AUM Report</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/cap_summ.asp?rep=c&invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Portfolio Analysis</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/cap_summ.asp?rep=c&invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Portfolio Analysis</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/inv.ledger.asp?invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Investment Ledger</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/inv.ledger.asp?invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Investment Ledger</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/sip.report.asp?invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">SIP / STP Report</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/sip.report.asp?invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">SIP / STP Report</A>
                                             </td>
                                         </tr>    
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/tax_sheet.asp?invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Taxation Sheet</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/tax_sheet.asp?invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1");return false;">Taxation Sheet</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/txn.search.asp?invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1"); return false;">Search Transactions</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/txn.search.asp?invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1"); return false;">Search Transactions</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/reports/main/ms.aws.asp?invid=923","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1"); return false;">Morningstar AWS</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/reports/main/ms.aws.asp?invid='.$r['sno'].'","SYSREPORT","top=0,left=0,height=540,width=780,header=no,resizable=yes,scrollbars=1"); return false;">Morningstar AWS</A>
                                             </td>
                                         </tr>
                                         </table>
                                     </div>
                                 </TD>
                                 <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;color:#ffffff; width:150px;text-align:center;" bgcolor="#3787af">			
-			                        <a href="#" onclick="if (document.getElementById("UD_DIV_FINP_923").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_FINP_923").style.display="block";} return false;" style="color:#ffffff;">Financial Planning Reports</a>
-				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_FINP_923" name="UD_DIV_FINP_923">
+			                        <a href="#" onclick="if (document.getElementById("UD_DIV_FINP_'.$r['sno'].'").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_FINP_'.$r['sno'].'").style.display="block";} return false;" style="color:#ffffff;">Financial Planning Reports</a>
+				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_FINP_'.$r['sno'].'" name="UD_DIV_FINP_'.$r['sno'].'">
                                         <table width="100px" cellpadding="6" cellspacing="0" style="border:1px solid #d2d2d3;" >
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.asp?INVESTOR_ID=923","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">Risk Profile & Goals</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.asp?INVESTOR_ID='.$r['sno'].'","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">Risk Profile & Goals</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.tracker.asp?investor_id=923","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">Goal Tracking & Mapping</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("/finnsys/finplan/goal.tracker.asp?investor_id='.$r['sno'].'","SYSREPORT","top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1");return false;">Goal Tracking & Mapping</A>
                                             </td>
                                         </tr>
                                         </table>
                                     </div>
                                 </TD>
                                 <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;color:#ffffff; width:150px;text-align:center;" bgcolor="#3787af">			
-			                        <a href="#" onclick="if (document.getElementById("UD_DIV_ALERTS_923").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_ALERTS_923").style.display="block";} return false;" style="color:#ffffff;">Set Alerts</a>
-                                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_ALERTS_923" name="UD_DIV_ALERTS_923">
+			                        <a href="#" onclick="if (document.getElementById("UD_DIV_ALERTS_'.$r['sno'].'").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_ALERTS_'.$r['sno'].'").style.display="block";} return false;" style="color:#ffffff;">Set Alerts</a>
+                                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_ALERTS_'.$r['sno'].'" name="UD_DIV_ALERTS_'.$r['sno'].'">
                                         <table width="100px" cellpadding="6" cellspacing="0" style="border:1px solid #d2d2d3;">
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" onclick="window.open("/FinnSys/alerts/set/alerts.insurance.asp?INVESTOR_ID=923","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set Insurance Alerts</a>
+                                                <a href="#" style="text-decoration:none" onclick="window.open("FinnSys/alerts/set/alerts.insurance.asp?INVESTOR_ID='.$r['sno'].'","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set Insurance Alerts</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" onclick="window.open("/FinnSys/alerts/set/alerts.sip.asp?investor_id=923","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set SIP/STP Alerts</a>
+                                                <a href="#" style="text-decoration:none" onclick="window.open("FinnSys/alerts/set/alerts.sip.asp?investor_id='.$r['sno'].'","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set SIP/STP Alerts</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" onclick="window.open("/FinnSys/alerts/set/alerts.customized.asp?investor_id=923","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set Customized Alerts</a>
+                                                <a href="#" style="text-decoration:none" onclick="window.open("FinnSys/alerts/set/alerts.customized.asp?investor_id='.$r['sno'].'","NEWALERT","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Set Customized Alerts</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="">
-                                                <a href="#" style="text-decoration:none" onclick="window.open("/FinnSys/alerts/set/alerts.all.asp?investor_id=923","ALLALERTS","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Show existing alerts</a>
+                                                <a href="#" style="text-decoration:none" onclick="window.open("FinnSys/alerts/set/alerts.all.asp?investor_id='.$r['sno'].'","ALLALERTS","top=10,left=100,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1");return false;">Show existing alerts</a>
                                             </td>
                                         </tr>
                                         </table>
                                     </div>
 			                    </TD>
                                  <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;color:#ffffff; width:150px;text-align:center;" bgcolor="#3787af">			
-			                        <a href="#" onclick="if (document.getElementById("UD_DIV_TOOLS_923").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_TOOLS_923").style.display="block";} return false;" style="color:#ffffff;">Investments / Carts</a>
-				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_TOOLS_923" name="UD_DIV_TOOLS_923">
+			                        <a href="#" onclick="if (document.getElementById("UD_DIV_TOOLS_'.$r['sno'].'").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_TOOLS_'.$r['sno'].'").style.display="block";} return false;" style="color:#ffffff;">Investments / Carts</a>
+				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_TOOLS_'.$r['sno'].'" name="UD_DIV_TOOLS_'.$r['sno'].'">
                                         <table width="100px" cellpadding="6" cellspacing="0" style="border:1px solid #d2d2d3;">
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" style="border-bottom:1px solid #d2d2d3;">
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/tools/investor.cart.asp?invid=923","SYSREPORT","top5=0,left=150,height=540,width=900,header=no,resizable=yes,scrollbars=1"); return false;">Show/Create Cart</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/tools/investor.cart.asp?invid='.$r['sno'].'","SYSREPORT","top5=0,left=150,height=540,width=900,header=no,resizable=yes,scrollbars=1"); return false;">Show/Create Cart</A>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" >
-                                                <A style="text-decoration:none" onclick="window.open("/FinnSys/tools/mailer.investor.asp?todo=7&tid=923","","top=50,left=200,height=500,width=600,header=no,resizable=yes,scrollbars=1"); return false;" href="#">Email Cart</A>
+                                                <A style="text-decoration:none" onclick="window.open("FinnSys/tools/mailer.investor.asp?todo=7&tid='.$r['sno'].'","","top=50,left=200,height=500,width=600,header=no,resizable=yes,scrollbars=1"); return false;" href="#">Email Cart</A>
                                             </td>
                                         </tr>
                                         
@@ -537,12 +546,12 @@ function getFolioDetails(DivToChange, inv_id) {
                                 </TD>
                             
                             <TD class="smallest" valign="top" nowrap style="border:1px solid #a1a1a3;color:#ffffff; width:150px;text-align:center;" bgcolor="#3787af">			
-			                        <a href="#" onclick="if (document.getElementById("UD_DIV_SUBSC_923").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_SUBSC_923").style.display="block";} return false;" style="color:#ffffff;">Subscription Reports</a>
-				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_SUBSC_923" name="UD_DIV_SUBSC_923">
+			                        <a href="#" onclick="if (document.getElementById("UD_DIV_SUBSC_'.$r['sno'].'").style.display=="block"){HideAllSubMenus();} else {HideAllSubMenus();document.getElementById("UD_DIV_SUBSC_'.$r['sno'].'").style.display="block";} return false;" style="color:#ffffff;">Subscription Reports</a>
+				                    <div style="float:left;width:100px;padding:8px;display:none;position:absolute;" id="UD_DIV_SUBSC_'.$r['sno'].'" name="UD_DIV_SUBSC_'.$r['sno'].'">
                                         <table width="100px" cellpadding="6" cellspacing="0" style="border:1px solid #d2d2d3;">
                                         <tr>
                                             <td nowrap class="smallest" align="left" valign="middle" bgcolor="#eeeeee" >
-                                                <a href="#" style="text-decoration:none" Onclick="window.open("/FinnSys/investors/billing/subs.payments.asp?invid=923&invname=ANIL KUMAR CHAUBEY","SYSREPORT","top=10,left=20,height=400,width=750,header=no,resizable=yes,scrollbars=1");return false;">Payment Receipts</A>
+                                                <a href="#" style="text-decoration:none" Onclick="window.open("FinnSys/investors/billing/subs.payments.asp?invid='.$r['sno'].'&invname=ANIL KUMAR CHAUBEY","SYSREPORT","top=10,left=20,height=400,width=750,header=no,resizable=yes,scrollbars=1");return false;">Payment Receipts</A>
                                             </td>
                                         </tr>
                                         </table>
@@ -551,7 +560,7 @@ function getFolioDetails(DivToChange, inv_id) {
                             
                         </tr></table>
                     </DIV>
-                    <DIV id="DIV_FOL_923" style="padding:8px; display:none; position:center; width:75%" class="smallest">
+                    <DIV id="DIV_FOL_'.$r['sno'].'" style="padding:8px; display:none; position:center; width:75%" class="smallest">
                         Loading. Please wait.........
                     </DIV>
                 </TD>
@@ -575,4 +584,19 @@ function getFolioDetails(DivToChange, inv_id) {
 </center>
 </body>
 </html>
-<script>ShowPopup(false);</script>
+<script>
+function open_div_fns(id) {
+    if (document.getElementById("DIV_MENUS_"+id).style.display=="block")
+    {
+        document.getElementById("DIV_MENUS_"+id).style.display="none";
+        document.getElementById("IMG_MENUS_"+id).src="FinnSys/images/button_Open.gif";
+    }
+     else 
+    {
+        document.getElementById("DIV_MENUS_"+id).style.display="block";
+        document.getElementById("IMG_MENUS_"+id).src="FinnSys/images/button_Close.gif";
+    }
+    return false;
+}
+
+ShowPopup(false);</script>
