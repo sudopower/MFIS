@@ -221,10 +221,10 @@ function getFolioDetails(DivToChange, inv_id) {
 			</td>
         
 		    <td class=smaller valign=middle align=center nowrap width="135px">	
-                <A  onclick="window.open('/finnsys/help/main.asp?moveto=S','HELP','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;"  href="#"><img src="/finnsys/images/support.png" border=0></a>
+                <A  onclick="window.open('/finnsys/help/main.asp?moveto=S','HELP','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;"  href="#"><img src="finnsys/images/support.png" border=0></a>
 		    </td>
 		    <td class=smaller valign=middle align=center nowrap width="135px">	
-			    <A  onclick="window.open('/finnsys/help/main.asp?page=INVESTORSEARCH','HELP','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;" href="#"><img src="/finnsys/images/tutorial.png" border=0></a>
+			    <A  onclick="window.open('/finnsys/help/main.asp?page=INVESTORSEARCH','HELP','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;" href="#"><img src="finnsys/images/tutorial.png" border=0></a>
 		    </td>
         
 		</tr>
