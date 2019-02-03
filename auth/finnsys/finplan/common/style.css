@@ -1,0 +1,130 @@
+/* CSS Document */
+body
+{
+margin:0px;
+padding:0px;
+background:#004080;
+}
+.logottext
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+color:#00538f;
+margin-left:130px;
+
+}
+.punchline
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+color:#646464;
+margin-left:130px;
+}
+.welcome
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#505152;
+}
+.text
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#636363;
+line-height:150%;
+Text-align:justify;
+}
+.topmenu
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#2D9FD1;
+margin:0px 0px 0px 60px;
+text-decoration:none;
+font-weight:BOLD;
+}
+.topmenuwhite
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#ffffff;
+margin:0px 0px 0px 60px;
+text-decoration:none;
+font-weight:BOLD;
+}
+
+.topmenuwhite a:link
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#ffffff;
+margin:0px 0px 0px 60px;
+text-decoration:none;
+font-weight:BOLD;
+}
+
+.topmenuwhite a:visited
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#ffffff;
+margin:0px 0px 0px 60px;
+text-decoration:none;
+font-weight:BOLD;
+}
+
+
+.whitetext
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+color:#ffffff;
+}
+.ImgBackground
+{
+background:url('images/bgplain.jpg');
+background-repeat: no-repeat;
+}
+.whitetext a:hover
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+color:#ffffff;
+}
+.footer a
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+color:#636363;
+}
+.footer a:hover
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:underline;
+color:#636363;
+}
+.textbold
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#2e2e2e;
+}
+.greyheading
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+color:#646464;
+}
