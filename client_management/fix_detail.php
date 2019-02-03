@@ -151,10 +151,948 @@
 				<td class=smaller align=left >9425459125</td>
 				<td class=smaller align=left ><font color=red>Not Found</font></td>
 				<td class=smaller align=left >-</td>
-			</tr>			
+			</tr>
 					
 			<tr>	
-				<td class=smaller align=center >50</td>
+				<td class=smaller align=center >2</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=9140','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >9926351189</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >3</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=9155','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >7974713242</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >4</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8752','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >9907517617</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >5</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8962','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >9407131301</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >6</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8961','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >9407131301</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >7</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8176','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >8349695251</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >8</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8960','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>-</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left >9407131301</td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >9</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=4395','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>113</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >shashi kala dhoot uj113 self Ujjain</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >10</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=5459','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>113</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >uj113 ayush shahikala dhoot</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >Other</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >11</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=5459','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>113</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >uj113 ayush shahikala dhoot</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >12</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=4395','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>113</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >shashi kala dhoot uj113 self Ujjain</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / DHOOT GROUP</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >13</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=4394','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>115</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >uj115 laxmi dhoot Ujjain</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >14</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=4394','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>115</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >uj115 laxmi dhoot Ujjain</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >Other</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >15</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=4394','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>115</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=111','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>LAXMI KUMAR DHOOT</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >uj115 laxmi dhoot Ujjain</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / DHOOT GROUP</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >16</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=6975','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>A</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >17</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=6574','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>A.D KULKARNI</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >28, BANK COLONY SUBHASH NAGAR UJJAIN</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >18</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=6698','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>A.N SORTHI</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >319, SETHI NAGAR UJJAIN</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >19</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3898','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AADHYA SHAH</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >47 CHANDRA SHEKHAR MARG</td>
+				<td class=smaller align=left >JHABUA</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >20</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3897','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AADHYA SHAH</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >41/1 DAVE JI KA MAKAN DIST UJJAIN</td>
+				<td class=smaller align=left >TARANA</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >21</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2190','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AADITI DANGE</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >C/O M P DANGE C 29 VED NAGAR NANAKHEDA</td>
+				<td class=smaller align=left >UJJAIN M P</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >22</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2765','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AADITI JAIN</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >H NO-49 VIJAYINDER NAGAR,DABA ROAD SHERPUR</td>
+				<td class=smaller align=left >LUDHIANA</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >23</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2188','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAFREIN QURESHI</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >31 MIRZA NAIM BEG MARG UJJAIN M P</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >24</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=1222','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAISHA SANA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >79/A-2 AADARSH NAGAR COLONY DEWAS ROAD</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >25</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3007','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAKANKSHARAJE R GAEKWAD</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >GAEKWAD WADA OPP CITY POLICE STATION MANDVI PANIGATE MAIN ROAD</td>
+				<td class=smaller align=left >VADODARA</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >26</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=7094','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>Aakash</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >133 vrindavan pura  naya pura</td>
+				<td class=smaller align=left >ujjain</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >27</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3006','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAKASH CHOUHAN</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >C/O SHRI MAHADEV NARAYAN M NO 5 SURAJ NAGAR RANG BAWDI</td>
+				<td class=smaller align=left >UJJAIN M P</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >28</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=666','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AANCHAL RATHI</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >11 MAHASHWETA NAGAR UJJAIN</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >AANCHALRATHI@GMAIL.COM</td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / INDIRA KATARIA</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >29</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=1040','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AARAN DHING</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=6667','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>MAYANK DHING</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >49, SHIVAJI PARK COLONY, DEWAS ROAD</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / INDIRA KATARIA</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >30</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=1040','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AARAN DHING</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+						
+						<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=6667','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+							<B>MAYANK DHING</B>
+						</A>	
+					
+				</td>
+				<td class=smaller align=left >49, SHIVAJI PARK COLONY, DEWAS ROAD</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >31</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=422','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AARNA GUPTA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >H-54 THATIPUR COLONY GAWALIOR</td>
+				<td class=smaller align=left >GAWALIOR</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / VIMAL CHANDRA JAIN(F)</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >32</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=421','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAROHI JAIN</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >MIG-38 DHANCHA BHAWA ROAD MASJID KE PASS</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / VIMAL CHANDRA JAIN(F)</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >33</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2115','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AARTI KHUSHWAHA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >B-2/28 ARVIND NAGAR HIRAMILLS ROAD UJJAI</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >34</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2187','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AASHI NEEMA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >C/O SHRI VINOD NEEMA 29/1 SHREE KRISHNA COLONY ANKPAT MARG</td>
+				<td class=smaller align=left >UJJAIN MP</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >35</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2186','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AASHITA GUPTA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >C/O SHRI AJAY KUMAR GUPTA 35 SHREE NAGAR EXTN</td>
+				<td class=smaller align=left >INDORE</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >36</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3287','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AASHLESHA DESHPANDE</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >VIJAY DEEP L I G 46 CIVIL LINES</td>
+				<td class=smaller align=left >DEWAS</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >37</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8336','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AASTHA GUPTA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >2/3, KSHIR SAGAR COLONY UJJAIN</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >38</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3005','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAUSHI JAIN</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >37 JHALANI BULLDING CHHOTA SARAFA UJJAIN UJJAIN</td>
+				<td class=smaller align=left >M P</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >39</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=1921','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSH BHORASKAR</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >86 SANT NAGAR</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >40</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3004','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSH SUWTA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >206 TOPKHANA MAHAKAL MARG UJJAIN UJJAIN</td>
+				<td class=smaller align=left >M P</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >41</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3003','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSHI AGIWAL</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >C 12/10 LIG RISHI NAGAR  UJJAIN</td>
+				<td class=smaller align=left >MP</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >42</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=2185','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSHI CHAUDHARI</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >ADVOCATE LALIT BHAWAN NIJATPURA UJJAIN M P</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >43</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=3002','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSHI JAIN</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >37, JHALANI BLDG, CHOTA SARAF,</td>
+				<td class=smaller align=left >UJJAIN, M. P.</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >44</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=787','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>AAYUSHI PARMAR</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >5/8 CHANDRA SHEKHAR AZAD MARG BILOTIPURA</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / INDIRA KATARIA</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >45</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=417','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>ABDUL HAFIZ</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >3/3 TOPKHANA KHRRATI MASJID KE PICHE</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >46</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8522','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>Abdul Noushad</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >77, GREEN PARK COLONY UJJAIN</td>
+				<td class=smaller align=left >ujjain</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / PRATIBHA MUNDRA</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >47</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=1861','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>ABDUL QUADIR PITHAWALA</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >26 PITHAWALA BUILDING BAHADURPURA</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >SMART FUTURE INVESTOR SERVICES / Sumit Kataria</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >48</td>
 				<td class=smaller align=left >
 				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8510','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
 					<B>ABDUL RAHIM GHISA KHAN</B>
@@ -166,6 +1104,46 @@
 					
 				</td>
 				<td class=smaller align=left >45, MADARGATE UJJAIN</td>
+				<td class=smaller align=left >-</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >49</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=7026','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>ABDUL RASHID</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >80, KL MANANA MARG UJJAIN</td>
+				<td class=smaller align=left >UJJAIN</td>
+				<td class=smaller align=left >, , , , , </td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left ><font color=red>Not Found</font></td>
+				<td class=smaller align=left >-</td>
+			</tr>
+					
+			<tr>	
+				<td class=smaller align=center >50</td>
+				<td class=smaller align=left >
+				<A title="Click to open Investor Record" onclick="return window.open('/FinnSys/tools/master.investors.asp?invid=8658','','top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1');" href="#">
+					<B>ABDUL RASHID</B>
+				</A>
+				</td>
+				<td class=smaller align=left >
+					
+						-
+					
+				</td>
+				<td class=smaller align=left >RK AGENCY RAM GI KI GALI UJJAIN</td>
 				<td class=smaller align=left >-</td>
 				<td class=smaller align=left >, , , , , </td>
 				<td class=smaller align=left ><font color=red>Not Found</font></td>
@@ -384,6 +1362,8 @@
 							<A class="SMALLER" HREF="fix.contacts.asp?pgno=104&srt=&inv_srch=&UD_REC_TYPE=&UD_NO_REC=">104</A>	
 						
 							<A class="SMALLER" HREF="fix.contacts.asp?pgno=105&srt=&inv_srch=&UD_REC_TYPE=&UD_NO_REC=">105</A>	
+						
+							<A class="SMALLER" HREF="fix.contacts.asp?pgno=106&srt=&inv_srch=&UD_REC_TYPE=&UD_NO_REC=">106</A>	
 						
 			&nbsp;
 				
