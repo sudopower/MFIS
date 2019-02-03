@@ -321,7 +321,7 @@ t.parentNode.insertBefore(s,t);
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
 										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="client_master.php">Import Client Master</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
-										    <td align="left" class="greylink"><a href="#" onclick="return window.open('/finnsys/finplan/start.asp','SYSREPORT','top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1'); return false;" >Create a new plan</a></td>
+										    <td align="left" class="greylink"><a href="#" onclick="return window.open('finnsys/finplan/start.php','SYSREPORT','top=100,left=100,height=550,width=850,header=no,resizable=yes,scrollbars=1,status=1'); return false;" >Create a new plan</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/green_sq.jpg"></td>
 										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/tools/agents.home.asp">Distributor Network</a></td>
 										</tr>
@@ -329,7 +329,7 @@ t.parentNode.insertBefore(s,t);
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick='window.open("../client_management/fix_detail.php","NEWINVESTOR","top=0,left=50,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Update Emails & Mobile Nos</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/txn/new.txn.home.asp">Import Transactions</a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/txn/new_txn_home.php">Import Transactions</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/finplan/master/all.risk.profiles.asp">Investor Risk Profiles</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/green_sq.jpg"></td>
@@ -339,7 +339,7 @@ t.parentNode.insertBefore(s,t);
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="search_inv.php">Investor MIS</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/txn/trail.home.asp">Import Trail Reports </a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/txn/trail_home.php">Import Trail Reports </a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/finplan/master/all.goals.asp">Investor Goals</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/green_sq.jpg"></td>
@@ -347,9 +347,9 @@ t.parentNode.insertBefore(s,t);
 										</tr>
 										<tr>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="window.open('/FinnSys/finplan/master/latest.investors.asp','FINPLANREPORT','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;" href="#">New Investors registered</a></td>
+										    <td align="left" class="greylink"><a onclick="window.open('FinnSys/finplan/master/latest_investors.php','FINPLANREPORT','top=0,left=0,height=600,width=900,header=no,resizable=yes,scrollbars=1,status=1'); return false;" href="#">New Investors registered</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/txn/bulk_upload/bulk.upload.home.asp">Bulk Import Masters</a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/txn/bulk_upload/bulk_upload_home.php">Bulk Import Masters</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
 										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/finplan/asset.alloc.asp">Set Asset Allocation</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/green_sq.jpg"></td>
@@ -371,9 +371,9 @@ t.parentNode.insertBefore(s,t);
 										</tr>
 										<tr>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/investors/groups.asp">Investor Groups / Families</a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/investors/groups.php">Investor Groups / Families</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="/FinnSys/manual/main.asp">Manual Entry</a></td>
+										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/manual/main.php">Manual Entry</a></td>
 										    <td valign="middle" align="right" width="15px">&nbsp;</td>
 										    <td align="left" class="greylink">&nbsp;</td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/green_sq.jpg"></td>
