@@ -1,7 +1,7 @@
 
 <?php 
 
-include('session.php');
+include('../assets/session.php');
 $q_name='select name from user where username= "'.$_SESSION['login_user'].'"';
 $result=$db->query($q_name);
 $row=$result->fetch_array();
@@ -317,7 +317,7 @@ t.parentNode.insertBefore(s,t);
 										</tr>
 										<tr>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
-										    <td align="left" valign="middle" class="greylink"><a onclick='window.open("../client_management/add_new.php","NEW INVESTOR","top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Add New Investor</a></td>
+										    <td align="left" valign="middle" class="greylink"><a onclick='window.open("tools/add_new.php","NEW INVESTOR","top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Add New Investor</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
 										    <td align="left" valign="middle" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="client_master.php">Import Client Master</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
@@ -327,7 +327,7 @@ t.parentNode.insertBefore(s,t);
 										</tr>
 										<tr>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/purple_sq.jpg"></td>
-										    <td align="left" class="greylink"><a onclick='window.open("../client_management/fix_detail.php","NEWINVESTOR","top=0,left=50,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Update Emails & Mobile Nos</a></td>
+										    <td align="left" class="greylink"><a onclick='window.open("finnsys/investors/fix_detail.php","NEWINVESTOR","top=0,left=50,height=600,width=800,header=no,resizable=yes,scrollbars=1,status=1"); return false;' href="#">Update Emails & Mobile Nos</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/blue_sq.jpg"></td>
 										    <td align="left" class="greylink"><a onclick="CollapseMenu();" target="RESULTS_PANE" href="FinnSys/txn/new_txn_home.php">Import Transactions</a></td>
 										    <td valign="middle" align="right" width="15px"><img src="finnsys/images/red_sq.jpg"></td>
