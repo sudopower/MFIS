@@ -1,5 +1,5 @@
 <?php 
-include('session.php');
+include('../assets/session.php');
 $sort='inv_name ASC';
 if(isset($_GET['sortby'])){
     switch($_GET['sortby']){
