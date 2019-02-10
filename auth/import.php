@@ -1,5 +1,5 @@
 <?php 
-include('session.php');
+include('../assets/session.php');
 
 ?>
 

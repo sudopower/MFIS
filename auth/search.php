@@ -9,7 +9,7 @@ if(isset($_GET['sortby'])){
     }
 }
 
-$q='select * from investors where inv_name like "%'.$_GET["srch_str"].'%" order by '.$sort.'';
+$q='select * from investors where inv_name like "%'.$_GET["srch_str"].'%" group by pan_no order by '.$sort.'';
 $result=$db->query($q);
 $num=$result->num_rows;
 ?>
@@ -383,7 +383,7 @@ function getFolioDetails(DivToChange, inv_id) {
                 </td>                                    
 		        <td class=smallest align=LEFT>
 		            
-		            <a href="#" OnClick=window.open("../client_management/add_new.php?invid='.$r['sno'].'","","top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1"); return false; title="Click to open Investor Record"  ><b>'.$r["inv_name"].'</b></a>
+		            <a href="#" OnClick=window.open("tools/add_new.php?invid='.$r['sno'].'","","top=0,left=50,height=540,width=700,header=no,resizable=yes,scrollbars=1"); return false; title="Click to open Investor Record"  ><b>'.$r["inv_name"].'</b></a>
 		            
                 </td>
 		        <td class=smallest align=CENTER>
